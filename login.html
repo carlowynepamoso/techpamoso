@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .vid{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+      }
+      @media(min-aspect-ratio:16/9){
+          .vid{
+            width: 100%;
+            height: auto;
+          }
+      } 
+      @media(max-aspect-ratio:16/9){
+        .vid{
+         width: auto;
+         height: 100%;
+        }
+      }
+      .div1{
+        width: 420px;
+        text-align: center;
+        margin: 200px auto;
+        background-color: transparent;
+        border-radius: 10px;
+        border:1px solid wheat;
+        backdrop-filter: blur(30px);
+        color: white;
+        padding-bottom: 10px;
+      }
+        .tech{
+          text-align: center;
+          color:white;
+
+        }
+        .enter{
+          color: white;
+          padding-left: 20px;
+          padding-right: 20px;
+          padding-top: 5px;
+          padding-bottom:5px;
+          border-radius: 10px;
+          text-decoration: none;
+          border: 1px solid white;
+          animation: rainbow 2s linear infinite;
+        }.enter:hover{
+          -webkit-text-stroke: 2px red;
+          color: transparent;
+        } @keyframes rainbow{
+       0%{color:red}
+       16.67%{color:orange}
+        33.33%{color:yellow}
+        50%{color:green}
+        66.67%{color:blue}
+        83.33%{color:indigo}
+        100%{color:violet}
+
+        }
+
+    </style>
+  </head>
+        <h1 class="tech">
+          PAMOSO.TECH
+        </h1>
+           
+         <div class="div1">
+          <h1>LOGIN</h1>
+          <input type="text" placeholder="username"><br><br>
+          <input type="password" placeholder="password"><br><br>
+          <a class="enter" href="BSIT_PROGRAM_PROJECT_WEBSITE.HTML">ENTER</a>
+         </div>
+      <video autoplay muted loop plays-inline class="vid">
+        <source src="bacbac.mp4" type="video/mp4">
+      </video>
+     
+
+  <body>
+
+  </body>
+</html>
